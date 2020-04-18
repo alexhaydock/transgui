@@ -36,28 +36,28 @@ are working to land snap install documentation and
 the [snapcraft.yaml](https://github.com/snapcrafters/fork-and-rename-me/blob/master/snap/snapcraft.yaml)
 upstream so [Project] can authoritatively publish future releases.
 
-  - [X] Click the green "Use this template" button above to create a new repository based on this template
-  - [X] Give the newly created repository a sensible name, like `godzilla-snap` if you're snapping the Godzilla software
-  - [X] Update the description of the repository
-  - [X] Update logos and references to `[Project]` and `[my-snap-name]`
-  - [X] Create a snap that runs in `devmode`
-  - [X] Register the snap in the store, **using the preferred upstream name**
+  - [x] Click the green "Use this template" button above to create a new repository based on this template
+  - [x] Give the newly created repository a sensible name, like `godzilla-snap` if you're snapping the Godzilla software
+  - [x] Update the description of the repository
+  - [x] Update logos and references to `[Project]` and `[my-snap-name]`
+  - [x] Create a snap that runs in `devmode`
+  - [x] Register the snap in the store, **using the preferred upstream name**
   - [ ] Add a screenshot to this `README.md`
-  - [X] Publish the `devmode` snap in the Snap store edge channel
-  - [X] Add install instructions to this `README.md`
-  - [X] Update snap store metadata, icons and screenshots
-  - [X] Convert the snap to `strict` confinement, or `classic` confinement if it qualifies
-  - [X] Publish the confined snap in the Snap store beta channel
-  - [X] Update the install instructions in this `README.md`
+  - [x] Publish the `devmode` snap in the Snap store edge channel
+  - [x] Add install instructions to this `README.md`
+  - [x] Update snap store metadata, icons and screenshots
+  - [x] Convert the snap to `strict` confinement, or `classic` confinement if it qualifies
+  - [x] Publish the confined snap in the Snap store beta channel
+  - [x] Update the install instructions in this `README.md`
   - [ ] Post a call for testing on the [Snapcraft Forum](https://forum.snapcraft.io) - [link]()
   - [ ] Make a post in the [Snapcraft Forum](https://forum.snapcraft.io) asking for a transfer of the snap name from you to snapcrafters - [link]()
   - [ ] Ask a [Snapcrafters admin](https://github.com/orgs/snapcrafters/people?query=%20role%3Aowner) to fork your repo into github.com/snapcrafters, and configure the repo for automatic publishing into edge on commit
-  - [X] Add the provided Snapcraft build badge to this `README.md`
-  - [X] Publish the snap in the Snap store stable channel
-  - [X] Update the install instructions in this `README.md`
+  - [x] Add the provided Snapcraft build badge to this `README.md`
+  - [x] Publish the snap in the Snap store stable channel
+  - [x] Update the install instructions in this `README.md`
   - [ ] Post an announcement in the [Snapcraft Forum](https://forum.snapcraft.io) - [link](https://github.com/transmission-remote-gui/transgui/pull/1302)
-  - [X] Submit a pull request or patch upstream that adds snap install documentation - [link](https://github.com/transmission-remote-gui/transgui/pull/1302)
-  - [X] Submit a pull request or patch upstream that adds the `snapcraft.yaml` and any required assets/launchers - [link]()
+  - [x] Submit a pull request or patch upstream that adds snap install documentation - [link](https://github.com/transmission-remote-gui/transgui/pull/1302)
+  - [x] Submit a pull request or patch upstream that adds the `snapcraft.yaml` and any required assets/launchers - [link]()
   - [ ] Add upstream contact information to the `README.md`  
   - If upstream accept the PR:
     - [ ] Request upstream create a Snap store account
