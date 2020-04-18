@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=Transmission Remote GUI
+Comment=A feature rich cross platform Transmission BitTorrent client.
+Exec=transgui
+Icon=${SNAP}/meta/gui/transgui.png
+Terminal=false
+Type=Application
+Categories=Internet;Network;FileTransfer;
+MimeType=application/x-bittorrent;x-scheme-handler/magnet;
+X-KDE-Protocols=magnet
+Keywords=Torrent;Transmission;
