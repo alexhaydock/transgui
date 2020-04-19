@@ -1,16 +1,14 @@
 <h1 align="center">
-  <img src="https://raw.githubusercontent.com/alexhaydock/transgui/master/snap/gui/transgui.png" alt="Transmission Remote GUI">
+  <img src="https://raw.githubusercontent.com/alexhaydock/transgui/master/snap/gui/transgui-test.png" alt="Transmission Remote GUI">
   <br />
   Transmission Remote GUI
 </h1>
 
 <p align="center"><b>This is the snap for Transmission Remote GUI</b>, <i>“A feature rich cross platform Transmission BitTorrent client.”</i>. It works on Ubuntu, Fedora, Debian, and other major Linux distributions.</p>
 
-<!-- Uncomment and modify this when you are provided a build status badge
 <p align="center">
-<a href="https://build.snapcraft.io/user/snapcrafters/fork-and-rename-me"><img src="https://build.snapcraft.io/badge/snapcrafters/fork-and-rename-me.svg" alt="Snap Status"></a>
+<a href="https://build.snapcraft.io/user/alexhaydock/transgui-test"><img src="https://build.snapcraft.io/badge/alexhaydock/transgui-test.svg" alt="Snap Status"></a>
 </p>
--->
 
 <!-- Uncomment and modify this when you have a screenshot
 ![my-snap-name](screenshot.png?raw=true "my-snap-name")
