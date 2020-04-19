@@ -4,7 +4,7 @@ grade: stable
 summary: A feature rich cross platform Transmission BitTorrent client.
 license: GPL-2.0
 description: Transmission Remote GUI is feature rich cross platform front-end to remotely control Transmission daemon via its RPC protocol. It is faster and has more functionality than the built-in Transmission web interface.
-icon: snap/gui/transgui.png
+icon: snap/gui/transgui-test.png
 confinement: strict
 base: core18
 
