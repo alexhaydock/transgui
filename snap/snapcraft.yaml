@@ -55,7 +55,7 @@ parts:
   #    https://github.com/ubuntu/snapcraft-desktop-helpers/blob/master/snapcraft.yaml
   #
   gtk2:
-    source: .
+    source: https://github.com/ubuntu/snapcraft-desktop-helpers.git
     source-subdir: gtk
     plugin: make
     make-parameters: ["FLAVOR=gtk2"]
