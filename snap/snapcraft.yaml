@@ -13,9 +13,6 @@ architectures:
 - build-on: arm64
 - build-on: armhf
 
-# We need to enable universe if we're using the Ubuntu transgui build
-components: [main, universe]
-
 apps:
   transgui:
     command: bin/desktop-launch $SNAP/usr/bin/transgui
