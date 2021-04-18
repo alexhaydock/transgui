@@ -18,9 +18,7 @@ components: [main, universe]
 
 apps:
   transgui:
-    command: transgui
-#    command-chain:
-#      - bin/desktop-launch
+    command: bin/desktop-launch $SNAP/usr/bin/transgui
     environment:
       # Fallback to XWayland if running in a Wayland session
       DISABLE_WAYLAND: 1
