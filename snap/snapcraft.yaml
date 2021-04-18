@@ -12,7 +12,6 @@ architectures:
 - build-on: amd64
 - build-on: arm64
 - build-on: armhf
-- build-on: i386
 
 apps:
   transgui:
@@ -24,31 +23,45 @@ apps:
       DISABLE_WAYLAND: 1
       GTK_PATH: $SNAP/lib/gtk-2.0
     plugs:
-      - home
-      - removable-media
       - desktop
       - desktop-legacy
+      - gsettings
+      - home
+      - network
+      - removable-media
       - unity7
       - wayland
       - x11
-      - gsettings
-      - network
 
 parts:
+  # This part brings in the transgui package from the Ubuntu Archive. In future
+  # I will probably try to build this manually, but the Ubuntu package is quite
+  # useful for now until the Upstream is patched to work with newer distros or
+  # updated to use GTK3.
+  #
+  # See: https://github.com/transmission-remote-gui/transgui/issues/1310#issuecomment-668643815
+  #
   transgui:
     plugin: nil
     stage-packages:
       - transgui
     after:
-      - desktop-gtk2
+      - gtk2
 
-  desktop-gtk2:
-    source: https://github.com/ubuntu/snapcraft-desktop-helpers.git
+  # This part installs the `desktop-launch` script which initialises desktop
+  # features such as fonts, themes and the XDG environment. It also installs
+  # the GTK2 runtime libraries.
+  #
+  # It is copied straight from the snapcraft desktop helpers project. Please
+  # periodically check the source for updates and copy the changes.
+  #    https://github.com/ubuntu/snapcraft-desktop-helpers/blob/master/snapcraft.yaml
+  #
+  gtk2:
+    source: .
     source-subdir: gtk
     plugin: make
     make-parameters: ["FLAVOR=gtk2"]
     build-packages:
-      - build-essential
       - libgtk2.0-dev
     stage-packages:
       - libxkbcommon0  # XKB_CONFIG_ROOT
@@ -63,9 +76,8 @@ parts:
       - libglib2.0-bin
       - libgtk2.0-bin
       - unity-gtk2-module
-      - locales-all
       - libappindicator1
-      - xdg-user-dirs
+      - locales-all
       - ibus-gtk
       - libibus-1.0-5
 
@@ -86,3 +98,4 @@ plugs:
     interface: content
     target: $SNAP/data-dir/sounds
     default-provider: gtk-common-themes
+  
