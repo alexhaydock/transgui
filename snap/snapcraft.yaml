@@ -10,11 +10,8 @@ base: core20
 
 architectures:
 - build-on: amd64
-- build-on: arm64
+# - build-on: arm64
 - build-on: armhf
-- build-on: ppc64el
-- build-on: riscv64
-- build-on: s390x
 
 apps:
   transgui:
@@ -41,7 +38,6 @@ parts:
     plugin: dump
     source:
       - on amd64: https://github.com/transmission-remote-gui/transgui/releases/download/v$SNAPCRAFT_PROJECT_VERSION/transgui-$SNAPCRAFT_PROJECT_VERSION-x86_64-Linux.txz
-      - on i386: https://github.com/transmission-remote-gui/transgui/releases/download/v$SNAPCRAFT_PROJECT_VERSION/transgui-$SNAPCRAFT_PROJECT_VERSION-i686-Linux.txz
       - on armhf: https://github.com/transmission-remote-gui/transgui/releases/download/v$SNAPCRAFT_PROJECT_VERSION/transgui-$SNAPCRAFT_PROJECT_VERSION-armv7l-Linux.txz
     source-type: tar
     stage-packages:
